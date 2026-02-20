@@ -1,0 +1,56 @@
+{
+  "name": "@maehdakvan/agents-mcp",
+  "version": "1.0.0",
+  "description": "An MCP (Model Context Protocol) server for invoking specialized AI agents via any OpenAI-compatible API.",
+  "author": "DedInc",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "agents-mcp": "dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DedInc/agents-mcp.git"
+  },
+  "homepage": "https://github.com/DedInc/agents-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/DedInc/agents-mcp/issues"
+  },
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist",
+    "presets"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.0",
+    "openai": "^4.86.0",
+    "zod": "^3.24.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@types/node": "^22.13.0",
+    "eslint": "^4.1.1",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "typescript-eslint": "^8.36.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "mcp",
+    "modelcontextprotocol",
+    "ai",
+    "agents",
+    "copilot",
+    "claude"
+  ]
+}

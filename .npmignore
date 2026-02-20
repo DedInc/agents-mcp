@@ -1,0 +1,9 @@
+src/
+presets/
+*.py
+pyproject.toml
+.venv/
+node_modules/
+tsconfig.json
+*.md
+!README.md
